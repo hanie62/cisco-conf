@@ -1,0 +1,43 @@
+Configuring Global Parameters
+To configure the global parameters for your router, follow these steps.
+
+SUMMARY STEPS
+1. configure terminal
+
+2. hostname name
+
+3. enable secret password
+
+4. no ip domain-lookup
+-----------------------------
+Configuring Gigabit Ethernet WAN Interfaces
+You can connect WAN interfaces either by using straight polarity connectors or reversed polarity connectors.
+
+Straight Polarity: If Mag-jack RJ45 connector has a dot or digit marked on front housing, it can be used with any type of cables.
+Reversed Polarity: If Mag-jack RJ45 connector has no dots or digit marked on front housing, it can be used with coupler and short cable (Cat5E UTP cable) to connect other devices which doesn’t support auto polarity correction.
+To configure Gigabit Ethernet (GE) WAN interfaces, follow these steps, beginning in global configuration mode.
+
+SUMMARY STEPS
+1. configure terminal
+
+2. interface gigabitethernet slot/port
+
+3. ip address ip-address mask
+
+4. no shutdown
+
+5. exit
+--------------------------------
+Configuring a Loopback Interface
+The loopback interface acts as a placeholder for the static IP address and provides default routing information.
+
+To configure a loopback interface, follow these steps, beginning in global configuration mode.
+
+SUMMARY STEPS
+1. configure terminal
+
+2. interface type number
+
+3. ip address ip-address mask
+
+4. exit
